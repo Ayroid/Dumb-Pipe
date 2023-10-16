@@ -1,8 +1,5 @@
 pipeline{
   agent any
-  pre {
-    echo "Pipeline starting!"
-  }
   stages {
     stage('STAGE 1 : BUILD'){
       steps{
@@ -19,8 +16,5 @@ pipeline{
         echo "Deploying the application..."
       }
     }
-  }
-  post {
-    echo "Pipeline ran successfully!"
   }
 }
